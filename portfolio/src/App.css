@@ -261,8 +261,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
+  background-color: burlywood , blur(40px);
+  backdrop-filter: blur(40px);
+  border-radius: 10px;
   color: black;
-  font-size: 20px;
+  font-size: 25px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
