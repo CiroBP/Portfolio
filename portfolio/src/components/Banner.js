@@ -48,8 +48,8 @@ export const Banner = () =>{
             <Container>
                 <Row className="align-items-cemnter">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{"Hi i'm fullstack Dev      "}<span className="wrap">--{text}</span></h1>
+                        <span className="tagline">Ciro Bernal Porflidtt</span>
+                        <h1>{"Hi i'm fullstack Dev      "}<span className="wrap"><br/>{text}</span></h1>
                         <p>Student in the IT field seeking opportunities to gain experience and put my technical skills and knowledge to the test in a challenging work environment. My passion for quality and efficiency in successful deliveries drives me to contribute significantly to teams and companies.
                         </p>
                         <button onClick={() => console.log('connect')}> Connect with me<ArrowRightCircle size={25}/></button>
