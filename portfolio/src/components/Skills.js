@@ -40,23 +40,23 @@ export const Skills = () => {
                             <p>These are some of the technologies in which I have developed my projects.</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src={Java} alt="Image"/>
+                                    <img src={Java} alt="java"/>
                                     <h5>Java</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={Angular} alt="Image"/>
+                                    <img src={Angular} alt="angular"/>
                                     <h5>Angular</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={React} alt="Image"/>
+                                    <img src={React} alt="react"/>
                                     <h5>React</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={Sql} alt="Image"/>
+                                    <img src={Sql} alt="sql"/>
                                     <h5>MySql</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={Spring} alt="Image"/>
+                                    <img src={Spring} alt="spring"/>
                                     <h5>Spring</h5>
                                 </div>
                             </Carousel>
@@ -64,7 +64,7 @@ export const Skills = () => {
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-left" src={sharp}></img>
+            <img className="background-image-left" alt="decorator" src={sharp}></img>
         </section>
     )
 }
