@@ -1,6 +1,5 @@
 import { useState,useEffect } from "react";
-import{Navbar, Container,Nav} from "react-bootstrap";
-import { HashLink } from 'react-router-hash-link';
+import{Navbar, Container,Nav, NavLink} from "react-bootstrap";
 
 import logo from '../assets/img/logo.png';
 import social1 from '../assets/img/social1.svg';
@@ -43,7 +42,8 @@ export const NavBar= () =>{
                     <Nav className="me-auto">
                         <Nav.Link href="#home" className={activeLink === 'home'? 'active-navbar-link': 'navbar-link'} onClick={()=> onUpdateActiveLink('home')}>Home</Nav.Link>
                         <Nav.Link href="#skills" className={activeLink === 'skill'? 'active-navbar-link': 'navbar-link'} onClick={()=> onUpdateActiveLink('skills')}>Skills</Nav.Link>
-                        <Nav.Link href="#projects" className={activeLink === 'projects'? 'active-navbar-link': 'navbar-link'}onClick={()=> onUpdateActiveLink('projects')}>Projects</Nav.Link>
+                        <Nav.Link href="#project" className={activeLink === 'project'? 'active-navbar-link': 'navbar-link'}onClick={()=> onUpdateActiveLink('project')}>Projects</Nav.Link>
+                        <Nav.Link href="#contact"className={activeLink === 'contact'? 'active-navbar-link': 'navbar-link'}onClick={()=> onUpdateActiveLink('contact')}>Contact me</Nav.Link>
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
@@ -51,9 +51,7 @@ export const NavBar= () =>{
                             <a href="https://www.instagram.com/bernalciro/"><img src={social2} alt=""/></a>
                             <a href="https://www.linkedin.com/in/ciro-bernal-porflidtt-965279248/"><img src={social3} alt=""/></a>
                         </div>
-                        <HashLink to='#connect'>
-                    <button className="vvd"><span>Let’s Connect</span></button>
-                </HashLink>
+
                     </span>
                 </Navbar.Collapse>
             </Container>

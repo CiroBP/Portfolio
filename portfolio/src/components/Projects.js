@@ -5,10 +5,10 @@ import Port from "../assets/img/Port.png"
 
 export const Projects = () =>{
 
-    const Projects=[
+    const ProjectsFront=[
         {
             title: "Camarones App",
-            description: "Management app developed in Angular, Java (Spring Boot), MySQL.",
+            description: "Management app developed in Angular",
             imgUrl: Camarones
         },
         {
@@ -18,6 +18,16 @@ export const Projects = () =>{
         }
     ]
 
+    const ProjectBack=[
+        {
+        title: "Camarones App",
+        description: " Java (Spring Boot), MySQL.",
+        imgUrl: Camarones
+    }
+    ]
+    
+
+    
     return (
         <section className="project" id="project">
             <Container>
@@ -38,7 +48,21 @@ export const Projects = () =>{
                                 <Tab.Pane eventKey="first">
                                     <Row>
                                         {
-                                            Projects.map((project, index) =>{
+                                            ProjectsFront.map((project, index) =>{
+                                                return(
+                                                    <ProjectCards
+                                                        key={index}
+                                                        {...project}
+                                                        />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey="second">
+                                    <Row>
+                                        {
+                                            ProjectBack.map((project, index) =>{
                                                 return(
                                                     <ProjectCards
                                                         key={index}
