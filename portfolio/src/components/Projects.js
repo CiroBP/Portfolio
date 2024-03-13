@@ -1,6 +1,5 @@
 import { Container, Row, Col, Nav, NavItem, TabContainer, TabContent, Tab } from "react-bootstrap"
 import { ProjectCards } from "./ProjectsCards"
-import sharp from "../assets/img/sharp.avif"
 import Camarones from "../assets/img/camarones.jpg"
 import Port from "../assets/img/Port.png"
 
@@ -56,7 +55,7 @@ export const Projects = () =>{
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-right" alt="deco" src={sharp}></img>
+
         </section>
     )
 }

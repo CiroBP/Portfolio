@@ -1,5 +1,6 @@
 import { useState,useEffect } from "react";
 import{Navbar, Container,Nav} from "react-bootstrap";
+import { HashLink } from 'react-router-hash-link';
 
 import logo from '../assets/img/logo.png';
 import social1 from '../assets/img/social1.svg';
@@ -50,7 +51,9 @@ export const NavBar= () =>{
                             <a href="https://www.instagram.com/bernalciro/"><img src={social2} alt=""/></a>
                             <a href="https://www.linkedin.com/in/ciro-bernal-porflidtt-965279248/"><img src={social3} alt=""/></a>
                         </div>
-                        <button className="vvd" onClick={()=> console.log('connect')}><span>Connect with me</span></button>
+                        <HashLink to='#connect'>
+                    <button className="vvd"><span>Let’s Connect</span></button>
+                </HashLink>
                     </span>
                 </Navbar.Collapse>
             </Container>

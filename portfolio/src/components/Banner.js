@@ -1,6 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap"
 import { useState, useEffect } from "react"
-import {ArrowRightCircle} from "react-bootstrap-icons"
 import drake from "../assets/img/drake.png"
 
 
@@ -51,7 +50,7 @@ export const Banner = () =>{
                         <h1>{"Hi i'm fullstack Dev      "}<span className="wrap"><br/>{text}</span></h1>
                         <p>Student in the IT field seeking opportunities to gain experience and put my technical skills and knowledge to the test in a challenging work environment. My passion for quality and efficiency in successful deliveries drives me to contribute significantly to teams and companies.
                         </p>
-                        <button onClick={() => console.log('connect')}> Connect with me<ArrowRightCircle size={25}/></button>
+                        
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={drake} alt="Headder img"/>
